@@ -1,0 +1,32 @@
+.button {
+background-color: #4056A1;
+color: white;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+}
+
+.new-tweet {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-area {
+  border: none;
+  outline: none;
+  border-bottom: solid black 5px;
+  background-color: #f4f1ec;
+  margin-bottom: 15px;
+}
+
