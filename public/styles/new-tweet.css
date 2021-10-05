@@ -30,3 +30,6 @@ color: white;
   margin-bottom: 15px;
 }
 
+.counter-error {
+  color: red;
+}
