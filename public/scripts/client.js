@@ -74,9 +74,15 @@ $(document).ready(function() {
     });
   };
 
-
+  const counter = $("#counter").text();
   $("form").on("submit", function(event) {
     event.preventDefault();
+
+    //form validation
+    if (!$("#tweet-text").val() || $("#tweet-text").val().length > counter) {
+      return alert('Your tweet is either empty or too long');
+    }
+    
 
     const serializedData = $(this).serialize();
 
