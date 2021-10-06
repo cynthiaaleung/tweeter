@@ -40,8 +40,8 @@ $(document).ready(function() {
     const $footer = $("<footer>");
     $tweet.append($footer);
 
-    // days-ago TODO
-    const $daysAgo = $("<div>").addClass("days-ago").text(tweetObj.created_at);
+    // days-ago
+    const $daysAgo = $("<div>").addClass("days-ago").text(timeago.format(tweetObj.created_at));
 
     // icons
     const $icons = $("<div>");
@@ -67,21 +67,37 @@ $(document).ready(function() {
 
   };
 
-  const tweetData = {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
+  const renderTweets = function(tweets) {
+    tweets.forEach((tweet) => {
+      return $('#tweets-container').append(createTweetElement(tweet));
+    });
   };
 
-  const $tweet = createTweetElement(tweetData);
+  // Fake data taken from initial-tweets.json
+  const data = [
+    {
+      "user": {
+        "name": "Newton",
+        "avatars": "https://i.imgur.com/73hZDYK.png"
+        ,
+        "handle": "@SirIsaac"
+      },
+      "content": {
+        "text": "If I have seen further it is by standing on the shoulders of giants"
+      },
+      "created_at": 1461116232227
+    },
+    {
+      "user": {
+        "name": "Descartes",
+        "avatars": "https://i.imgur.com/nlhLi3I.png",
+        "handle": "@rd" },
+      "content": {
+        "text": "Je pense , donc je suis"
+      },
+      "created_at": 1461113959088
+    }
+  ];
 
-  // Test / driver code (temporary)
-  console.log($tweet); // to see what it looks li
-
+  renderTweets(data);
 });
