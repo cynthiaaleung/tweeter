@@ -1,19 +1,17 @@
 $(document).ready(function() {
-  
-  const counter = this.getElementById("counter").innerHTML;
 
-  const tweetText = this.getElementById("tweet-text");
-  tweetText.addEventListener("input", () => {
-  
-    let tweetLength = this.getElementById("tweet-text").value.length;
-    this.getElementById("counter").innerHTML = counter - tweetLength;
+  const counter = $("#counter").text();
 
-    let charRemaining = counter - tweetLength;
+  $("#tweet-text").on("input", function() {
+
+    let charRemaining = counter - $("#tweet-text").val().length;
+    
+    $("#counter").text(charRemaining);
+
     if (charRemaining < 0) {
-      this.getElementById("counter").className = "counter-error";
+      $("#counter").css("color", "red");
     } else {
-      this.getElementById("counter").className = "";
+      $("#counter").css("color", "black");
     }
   });
-  
 });

@@ -1,0 +1,66 @@
+article {
+  opacity: 0.5;
+  border: solid 5px black;
+  padding: 1em;
+  margin-top: 40px;
+}
+
+article:hover {
+  opacity: 1;
+}
+
+.avatar {
+  margin-right: 1em;
+}
+
+.avatar-and-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.days-ago {
+  color: black;
+  font-size: 16px;
+}
+
+.handle {
+  color: lightgray;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.icon {
+  color: #4056A1;
+  font-size: 0.75em;
+  opacity: 0.5;
+}
+
+.icon:hover {
+  color: #FAA717;
+  opacity: 1;
+}
+
+.tweet-content {
+  border-bottom: solid 5px black;
+  margin: 1em;
+  padding-bottom: 20px;
+}
+
+.tweet > footer {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tweet > header {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.username {
+  color: black;
+  font-style: normal;
+}

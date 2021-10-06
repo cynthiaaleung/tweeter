@@ -3,11 +3,9 @@ background-color: #4056A1;
 color: white;
 }
 
-
 .form {
   display: flex;
   flex-direction: column;
-  
 }
 
 .form-bottom {
@@ -30,6 +28,3 @@ color: white;
   margin-bottom: 15px;
 }
 
-.counter-error {
-  color: red;
-}
