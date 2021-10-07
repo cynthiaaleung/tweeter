@@ -60,7 +60,11 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-    <section class="new-tweet">
+      <div class="error">
+        <i class="fas fa-triangle-exclamation"></i>
+        <div class="error-message">Error: Your tweet is either empty or too long</div>
+      </div>
+      <section class="new-tweet"></section>
       <h2>Compose Tweet</h2>
       <form class="form" method=POST action="/tweets" >
         <textarea class="text-area" placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>

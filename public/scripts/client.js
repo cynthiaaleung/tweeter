@@ -80,9 +80,11 @@ $(document).ready(function() {
 
     //form validation
     if (!$("#tweet-text").val() || $("#tweet-text").val().length > counter) {
-      return alert('Your tweet is either empty or too long');
+      $(".error").slideDown().css("display", "flex");
+      return;
     }
     
+    $(".error").css("display", "none");
 
     const serializedData = $(this).serialize();
 

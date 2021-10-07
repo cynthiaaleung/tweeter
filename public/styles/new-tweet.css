@@ -3,6 +3,20 @@ background-color: #4056A1;
 color: white;
 }
 
+.error {
+  margin-top: 15px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: solid red 5px;
+  color: red;
+}
+
+.error-message {
+  margin: 15px;
+}
+
 .form {
   display: flex;
   flex-direction: column;

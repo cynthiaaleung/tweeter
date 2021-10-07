@@ -1,12 +1,12 @@
 article {
-  opacity: 0.5;
   border: solid 5px black;
   padding: 1em;
   margin-top: 40px;
+  word-wrap: break-word;
 }
 
 article:hover {
-  opacity: 1;
+  box-shadow: 5px 10px #888888;
 }
 
 .avatar {
