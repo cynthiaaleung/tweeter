@@ -70,7 +70,7 @@ $(document).ready(function() {
   const renderTweets = function(tweets) {
     $("#tweets-container").empty();
     tweets.forEach((tweet) => {
-      return $("#tweets-container").append(createTweetElement(tweet));
+      return $("#tweets-container").prepend(createTweetElement(tweet));
     });
   };
 
@@ -96,6 +96,11 @@ $(document).ready(function() {
       console.log("error", error);
       loadTweets();
     });
+
+    //resets text in input form and counter
+    this.reset();
+    $("#counter").text(counter);
+
   });
 
  
