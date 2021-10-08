@@ -15,3 +15,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshot of tweets displaying on a desktop screen"] (https://github.com/cynthiaaleung/tweeter/blob/master/public/images/before-tweet.png?raw=true)
+
+!["Screenshot of tweetsdisplaying on a phone screen"] (https://github.com/cynthiaaleung/tweeter/blob/master/public/images/after-tweet.png?raw=true)
+
+!["Screenshot of tweetsdisplaying on a tablet screen"] (https://github.com/cynthiaaleung/tweeter/blob/master/public/images/tablet-screen-tweets.png)
+
