@@ -79,12 +79,18 @@ $(document).ready(function() {
     event.preventDefault();
 
     //form validation
-    if (!$("#tweet-text").val() || $("#tweet-text").val().length > counter) {
-      $(".error").slideDown().css("display", "flex");
+    if (!$("#tweet-text").val()) {
+      $(".error-empty").slideDown().css("display", "flex");
+      $(".error-length").css("display", "none");
+      return;
+    } else if ($("#tweet-text").val().length > counter) {
+      $(".error-length").slideDown().css("display", "flex");
+      $(".error-empty").css("display", "none");
       return;
     }
     
-    $(".error").css("display", "none");
+    $(".error-empty").css("display", "none");
+    $(".error-length").css("display", "none");
 
     const serializedData = $(this).serialize();
 

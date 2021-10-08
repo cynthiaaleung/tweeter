@@ -15,12 +15,42 @@ html {
  */
 
 body {
-  color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
+  color: #545149;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ @media only screen and (min-width: 1024px) {
+  .header {
+    float: left;
+    margin-top: 200px;
+    margin-left: 40px;
+    width: 30%;
+  }
+
+  .container {
+    float: right;
+    margin: 120px 40px 40px 40px;
+    width: 55%;
+  }
+}
+
+ @media only screen and (min-width: 768px) {
+  .header {
+    float: left;
+    margin-top: 200px;
+    margin-left: 40px;
+    width: 30%;
+  }
+
+  .container {
+    float: right;
+    margin: 120px 40px 40px 40px;
+    width: 50%;
+  }
+}

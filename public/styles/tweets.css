@@ -30,19 +30,20 @@ article:hover {
 }
 
 .icon {
-  color: #4056A1;
+  color: #143d59;
   font-size: 0.75em;
   opacity: 0.5;
 }
 
 .icon:hover {
-  color: #FAA717;
+  color: #FAA700;
   opacity: 1;
 }
 
 .tweet-content {
   border-bottom: solid 5px black;
   margin: 1em;
+  margin: 20px 0px 10px 0px;
   padding-bottom: 20px;
 }
 

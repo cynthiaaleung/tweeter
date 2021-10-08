@@ -1,18 +1,40 @@
 .button {
-background-color: #4056A1;
-color: white;
+  background-color: #143d59;
+  color: white;
 }
 
 .error {
-  margin-top: 15px;
+  align-items: center;
   display: none;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+
   border: solid red 5px;
   color: red;
+  margin-top: 15px;
 }
 
+.error-empty {
+  align-items: center;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+
+  border: solid red 5px;
+  color: red;
+  margin-top: 15px;
+}
+
+.error-length {
+  align-items: center;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+
+  border: solid red 5px;
+  color: red;
+  margin-top: 15px;
+}
 .error-message {
   margin: 15px;
 }
@@ -24,21 +46,21 @@ color: white;
 
 .form-bottom {
   display: flex;
-  justify-content: space-between;
   font-family: 'Bungee', cursive;
+  justify-content: space-between;
 }
 
 .new-tweet {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 .text-area {
-  border: none;
-  outline: none;
-  border-bottom: solid black 5px;
   background-color: #f4f1ec;
+  border: none;
+  border-bottom: solid black 5px;
   margin-bottom: 15px;
+  outline: none; 
 }
 
