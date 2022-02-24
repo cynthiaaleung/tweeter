@@ -18,14 +18,16 @@ This is the tablet display of the homepage with the new tweet. It is similar to 
 
 !["Screenshot of tweets including displaying on a tablet screen"](https://github.com/cynthiaaleung/tweeter/blob/master/public/images/tablet-screen-tweets.png)
 
-## Tech Stack
+## Tech Stack & Dependencies
 
-- JavaScript, jQuery, AJAX, Node, Express, HTML, CSS
-
-## Dependencies
-
+- JavaScript
+- Node
 - Express
-- Node 5.10.x or above
+- jQuery
+- AJAX
+- HTML
+- CSS
+
 
 ## Getting Started
 
